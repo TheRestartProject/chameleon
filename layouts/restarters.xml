@@ -216,9 +216,9 @@ with this program. If not, see <http://www.gnu.org/licenses/>.
                     <component type="Container" class="tab-content" id="content" role="tablist">
                         <component type="RestartersTab" id="main-pane" class="tab-pane fade show active" role="tabpanel" aria-labelledby="tab-A">
                             <component type="Container" class="tab-pane-content">
-                                <component type="MainTitle" class="main-title text-left" />
+                                <component type="RestartersTitle" class="main-title text-left" />
 
-                                <component type="CustomMainContent"/>
+                                <component type="RestartersMainContent"/>
 
                                 <component type="RestartersToolbox" class="footer-links footer-links-border-top list-unstyled list-xl-inline mb-0 md-lg-0"/>
                             </component>
