@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+<?xml-model href="https://cmln.github.io/chameleon/schema/1.0/layout.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+This file is part of the MediaWiki skin Chameleon.
+
+@copyright 2013 - 2019, Stephan Gambke
+@license   GNU General Public License, version 3 (or any later version)
+
+The Chameleon skin is free software: you can redistribute it and/or modify it
+under the terms of the GNU General Public License as published by the Free
+Software Foundation, either version 3 of the License, or (at your option) any
+later version.
+
+The Chameleon skin is distributed in the hope that it will be useful, but
+WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or
+FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more
+details.
+
+You should have received a copy of the GNU General Public License along
+with this program. If not, see <http://www.gnu.org/licenses/>.
+
+@author Stephan Gambke
+@since 1.0
+@ingroup Skins
+-->
+<structure xmlns="https://ProfessionalWiki.github.io/chameleon/schema/3.0/layout.rng">
+
+    <!-- header NEW -->
+    <!-- <component type="NavbarHorizontal" class="nav-wrapper">
+    <custom-link path="/home">
+    <source>CNN News</source>
+    <destination>http://www.cnn.com</destination>
+    <target>_blank</target>
+  </custom-link>
+  </component> -->
+
+    <!-- Navigation -->
+    <component type="RestartersGlobalNav" class="nav-wrapper pl-0 pr-0">
+        <component type="Html">
+            <a href="https://restarters.net" class="icon-brand">
+                <div class="d-none d-md-block">
+                    <svg width="180" style="color:red" height="49" viewBox="0 0 180 49" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/"><title>Restarters</title><g><g><path d="M170.529,11.058c-1.141,-0.743 -2.667,-0.42 -3.409,0.723c-0.744,1.14 -0.42,2.668 0.721,3.41c4.48,2.917 7.156,7.842 7.156,13.172c0,5.33 -2.673,10.25 -7.15,13.168c-0.002,0.002 -0.005,0.003 -0.006,0.004c-2.549,1.657 -5.507,2.534 -8.551,2.534c-3.049,0 -6.004,-0.877 -8.553,-2.534c-0.002,-0.001 -0.003,-0.001 -0.005,-0.002c-4.478,-2.919 -7.153,-7.84 -7.153,-13.17c0,-5.33 2.676,-10.255 7.158,-13.172c1.143,-0.742 1.465,-2.27 0.722,-3.41c-0.743,-1.143 -2.269,-1.465 -3.412,-0.723c-5.885,3.832 -9.398,10.298 -9.398,17.305c0,7.007 3.513,13.476 9.398,17.306c0.001,0 0.003,0.002 0.005,0.003c3.35,2.178 7.235,3.328 11.238,3.328c4.001,0 7.89,-1.151 11.239,-3.331c5.887,-3.831 9.4,-10.299 9.4,-17.306c0,-7.007 -3.513,-13.473 -9.4,-17.305Z" style="fill-rule:nonzero;"></path><path d="M164.759,7.461c0.369,-1.259 -0.161,-4.292 -1.73,-6.15c-0.738,1.055 -1.153,2.407 -1.513,3.576c-0.627,0.229 -1.256,-0.049 -1.999,-0.287c-0.401,-0.128 -1.738,-0.424 -2.008,-0.856c-0.257,-0.407 0.247,-0.873 0.499,-1.357c0.174,-0.33 0.325,-0.81 0.469,-1.18c0.171,-0.438 0.241,-0.864 -0.022,-1.207c-1.588,0.117 -3.935,1.413 -4.793,3.169c-0.229,0.467 -0.351,1.376 -0.305,1.815c0.038,0.364 0.33,1.094 0.552,1.483c0.854,1.489 2.024,2.732 2.637,4.218c0.756,1.836 0.588,3.391 0.623,5.319c0.142,7.742 -0.021,10.223 -0.035,17.869c0,0.662 -0.048,1.452 0.109,1.773c0.894,1.843 3.54,2.025 4.438,-0.002c0.297,-0.671 0.094,-1.998 0.058,-2.948c-0.115,-3.038 -0.193,-5.976 -0.275,-8.838c-0.115,-3.994 -0.208,-3.151 -0.405,-6.89c-0.096,-1.849 -0.08,-3.907 0.949,-5.698c0.482,-0.84 2.258,-2.73 2.751,-3.809Z"></path></g><g><path d="M9.008,25.245c-1.521,0 -2.572,0.29 -3.152,0.871l0,6.876c1.621,0.3 2.732,0.721 3.333,1.261l-0.301,2.312l-8.588,0l-0.3,-2.312c0.28,-0.38 0.831,-0.72 1.652,-1.021l0,-8.348c-0.701,-0.24 -1.252,-0.58 -1.652,-1.021l0.3,-2.312c1.101,-0.24 2.092,-0.36 2.973,-0.36c0.881,0 1.612,0.02 2.192,0.06l0,1.892c0.461,-0.541 1.051,-0.986 1.772,-1.336c0.72,-0.351 1.376,-0.526 1.967,-0.526c0.59,0 0.996,0.05 1.216,0.15l-0.09,3.904c-0.401,-0.06 -0.841,-0.09 -1.322,-0.09Z" style="fill-rule:nonzero;"></path><path d="M18.858,36.806c-2.403,0 -4.209,-0.641 -5.42,-1.922c-1.211,-1.281 -1.817,-3.143 -1.817,-5.585c0,-1.482 0.21,-2.758 0.631,-3.829c0.42,-1.071 0.99,-1.897 1.711,-2.477c1.401,-1.121 3.033,-1.682 4.895,-1.682c1.862,0 3.288,0.476 4.279,1.426c0.991,0.951 1.486,2.658 1.486,5.12c0,1.442 -0.71,2.162 -2.132,2.162l-6.516,0c0.08,1.261 0.405,2.152 0.976,2.673c0.57,0.52 1.476,0.78 2.718,0.78c0.68,0 1.331,-0.08 1.951,-0.24c0.621,-0.16 1.071,-0.32 1.352,-0.48l0.42,-0.24l0.901,2.402c-0.12,0.14 -0.295,0.315 -0.526,0.525c-0.23,0.211 -0.81,0.491 -1.741,0.841c-0.931,0.35 -1.987,0.526 -3.168,0.526Zm1.892,-9.459c0.04,-0.281 0.06,-0.621 0.06,-1.021c0,-0.401 -0.161,-0.826 -0.481,-1.276c-0.32,-0.451 -0.876,-0.676 -1.666,-0.676c-0.791,0 -1.397,0.24 -1.817,0.721c-0.421,0.48 -0.701,1.291 -0.841,2.432l4.745,-0.18Z" style="fill-rule:nonzero;"></path><path d="M32.16,24.014c-1.321,0 -1.982,0.39 -1.982,1.171c0,0.74 0.691,1.291 2.072,1.651l2.373,0.631c2.442,0.64 3.663,2.052 3.663,4.234c0,1.501 -0.525,2.727 -1.576,3.678c-1.051,0.951 -2.723,1.427 -5.015,1.427c-2.292,0 -4.079,-0.321 -5.36,-0.961c-0.02,-0.221 -0.03,-0.441 -0.03,-0.661c0,-1.101 0.22,-2.092 0.66,-2.973l2.493,0c0.26,0.481 0.43,0.981 0.51,1.502c0.401,0.12 0.971,0.18 1.712,0.18c1.761,0 2.642,-0.501 2.642,-1.502c0,-0.32 -0.12,-0.585 -0.36,-0.795c-0.24,-0.21 -0.711,-0.416 -1.411,-0.616l-2.373,-0.69c-1.221,-0.341 -2.172,-0.846 -2.852,-1.517c-0.681,-0.671 -1.021,-1.661 -1.021,-2.973c0,-1.311 0.53,-2.387 1.591,-3.228c1.061,-0.841 2.578,-1.261 4.55,-1.261c1.971,0 3.638,0.29 4.999,0.871c0.02,0.2 0.03,0.4 0.03,0.6c0,1.041 -0.22,2.002 -0.66,2.883l-2.463,0c-0.26,-0.46 -0.43,-0.941 -0.51,-1.441c-0.561,-0.14 -1.121,-0.21 -1.682,-0.21Z" style="fill-rule:nonzero;"></path><path d="M45.163,17.768l0,3.783l4.294,0l0,2.523l-4.294,0l0,7.597c0,0.64 0.09,1.106 0.27,1.396c0.18,0.29 0.61,0.436 1.291,0.436c0.681,0 1.411,-0.151 2.192,-0.451l0.901,2.342c-1.542,0.781 -3.118,1.171 -4.73,1.171c-1.611,0 -2.702,-0.345 -3.273,-1.036c-0.57,-0.69 -0.855,-1.696 -0.855,-3.017l0,-8.438l-1.352,0l-0.33,-1.832c0.32,-0.38 0.981,-0.761 1.982,-1.141c0.24,-1.642 0.811,-2.753 1.711,-3.333l2.193,0Z" style="fill-rule:nonzero;"></path><path d="M51.468,23.773c0,-0.3 0.01,-0.62 0.03,-0.96c1.862,-1.001 3.864,-1.502 6.006,-1.502c2.142,0 3.679,0.405 4.609,1.216c0.931,0.811 1.397,2.157 1.397,4.039l0,6.396c0.7,0.14 1.251,0.31 1.651,0.51l0,2.613c-1.021,0.48 -2.482,0.721 -4.384,0.721c-0.2,-0.521 -0.37,-1.151 -0.51,-1.892c-0.861,1.261 -2.423,1.892 -4.685,1.892c-1.341,0 -2.487,-0.391 -3.438,-1.171c-0.951,-0.781 -1.426,-1.842 -1.426,-3.183c0,-1.342 0.445,-2.398 1.336,-3.168c0.891,-0.771 2.217,-1.157 3.979,-1.157l3.273,0l0,-1.441c0,-1.561 -0.831,-2.342 -2.493,-2.342c-0.62,0 -1.131,0.06 -1.531,0.18c-0.04,0.841 -0.16,1.492 -0.36,1.952l-2.943,0c-0.34,-0.701 -0.511,-1.602 -0.511,-2.703Zm5.406,9.97c1.021,0 1.831,-0.301 2.432,-0.901l0,-2.462l-2.102,0c-1.441,0 -2.162,0.55 -2.162,1.651c0,0.501 0.155,0.911 0.465,1.231c0.311,0.321 0.766,0.481 1.367,0.481Z" style="fill-rule:nonzero;"></path><path d="M75.251,25.245c-1.522,0 -2.573,0.29 -3.153,0.871l0,6.876c1.621,0.3 2.732,0.721 3.333,1.261l-0.3,2.312l-8.588,0l-0.301,-2.312c0.281,-0.38 0.831,-0.72 1.652,-1.021l0,-8.348c-0.701,-0.24 -1.251,-0.58 -1.652,-1.021l0.301,-2.312c1.101,-0.24 2.092,-0.36 2.972,-0.36c0.881,0 1.612,0.02 2.193,0.06l0,1.892c0.46,-0.541 1.051,-0.986 1.771,-1.336c0.721,-0.351 1.376,-0.526 1.967,-0.526c0.591,0 0.996,0.05 1.216,0.15l-0.09,3.904c-0.4,-0.06 -0.841,-0.09 -1.321,-0.09Z" style="fill-rule:nonzero;"></path><path d="M83.358,17.768l0,3.783l4.295,0l0,2.523l-4.295,0l0,7.597c0,0.64 0.091,1.106 0.271,1.396c0.18,0.29 0.61,0.436 1.291,0.436c0.681,0 1.411,-0.151 2.192,-0.451l0.901,2.342c-1.542,0.781 -3.118,1.171 -4.73,1.171c-1.611,0 -2.702,-0.345 -3.273,-1.036c-0.57,-0.69 -0.855,-1.696 -0.855,-3.017l0,-8.438l-1.352,0l-0.33,-1.832c0.32,-0.38 0.981,-0.761 1.982,-1.141c0.24,-1.642 0.811,-2.753 1.711,-3.333l2.192,0Z" style="fill-rule:nonzero;"></path><path d="M96.271,36.806c-2.403,0 -4.209,-0.641 -5.42,-1.922c-1.212,-1.281 -1.817,-3.143 -1.817,-5.585c0,-1.482 0.21,-2.758 0.63,-3.829c0.421,-1.071 0.991,-1.897 1.712,-2.477c1.401,-1.121 3.033,-1.682 4.895,-1.682c1.861,0 3.288,0.476 4.279,1.426c0.991,0.951 1.486,2.658 1.486,5.12c0,1.442 -0.711,2.162 -2.132,2.162l-6.516,0c0.08,1.261 0.405,2.152 0.976,2.673c0.57,0.52 1.476,0.78 2.717,0.78c0.681,0 1.332,-0.08 1.952,-0.24c0.621,-0.16 1.071,-0.32 1.352,-0.48l0.42,-0.24l0.901,2.402c-0.12,0.14 -0.296,0.315 -0.526,0.525c-0.23,0.211 -0.81,0.491 -1.741,0.841c-0.931,0.35 -1.987,0.526 -3.168,0.526Zm1.891,-9.459c0.04,-0.281 0.06,-0.621 0.06,-1.021c0,-0.401 -0.16,-0.826 -0.48,-1.276c-0.32,-0.451 -0.876,-0.676 -1.667,-0.676c-0.79,0 -1.396,0.24 -1.816,0.721c-0.421,0.48 -0.701,1.291 -0.841,2.432l4.744,-0.18Z" style="fill-rule:nonzero;"></path><path d="M112.576,25.245c-1.521,0 -2.572,0.29 -3.153,0.871l0,6.876c1.622,0.3 2.733,0.721 3.333,1.261l-0.3,2.312l-8.588,0l-0.3,-2.312c0.28,-0.38 0.83,-0.72 1.651,-1.021l0,-8.348c-0.701,-0.24 -1.251,-0.58 -1.651,-1.021l0.3,-2.312c1.101,-0.24 2.092,-0.36 2.973,-0.36c0.88,0 1.611,0.02 2.192,0.06l0,1.892c0.46,-0.541 1.051,-0.986 1.771,-1.336c0.721,-0.351 1.377,-0.526 1.967,-0.526c0.591,0 0.996,0.05 1.216,0.15l-0.09,3.904c-0.4,-0.06 -0.841,-0.09 -1.321,-0.09Z" style="fill-rule:nonzero;"></path><path d="M121.224,24.014c-1.321,0 -1.982,0.39 -1.982,1.171c0,0.74 0.691,1.291 2.072,1.651l2.372,0.631c2.443,0.64 3.664,2.052 3.664,4.234c0,1.501 -0.526,2.727 -1.577,3.678c-1.051,0.951 -2.722,1.427 -5.014,1.427c-2.292,0 -4.079,-0.321 -5.36,-0.961c-0.02,-0.221 -0.03,-0.441 -0.03,-0.661c0,-1.101 0.22,-2.092 0.66,-2.973l2.493,0c0.26,0.481 0.43,0.981 0.51,1.502c0.4,0.12 0.971,0.18 1.712,0.18c1.761,0 2.642,-0.501 2.642,-1.502c0,-0.32 -0.12,-0.585 -0.36,-0.795c-0.24,-0.21 -0.711,-0.416 -1.411,-0.616l-2.373,-0.69c-1.221,-0.341 -2.172,-0.846 -2.852,-1.517c-0.681,-0.671 -1.021,-1.661 -1.021,-2.973c0,-1.311 0.53,-2.387 1.591,-3.228c1.061,-0.841 2.578,-1.261 4.549,-1.261c1.972,0 3.639,0.29 5,0.871c0.02,0.2 0.03,0.4 0.03,0.6c0,1.041 -0.22,2.002 -0.66,2.883l-2.463,0c-0.26,-0.46 -0.43,-0.941 -0.51,-1.441c-0.561,-0.14 -1.121,-0.21 -1.682,-0.21Z" style="fill-rule:nonzero;"></path></g></g></svg>      </div>
+
+                <div class="d-dlock d-md-none">
+                    <svg width="41" height="49" viewBox="0 0 104 124" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+            <use id="Background" xlink:href="#_Image1" x="0" y="0" width="104px" height="124px"></use>
+                        <defs>
+              <image id="_Image1" width="104px" height="124px" xlink:href="data:image/png;base64,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"></image>
+            </defs>
+          </svg>
+                </div>
+            </a>
+
+
+            <ul class="nav-left d-flex justify-content-between w-100 pr-md-3">
+                <li style="flex-basis: 100%;">
+                    <a href="https://talk.restarters.net/">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="27.5" height="23.325" viewBox="0 0 27.5 23.325">
+                            <g data-name="Vrstva 147">
+                                <path d="M23.75 0h-20A3.75 3.75 0 0 0 0 3.75V15a3.75 3.75 0 0 0 3.75 3.75h1.875L8.5 22.575a1.875 1.875 0 0 0 3 0l2.875-3.825h9.375A3.75 3.75 0 0 0 27.5 15V3.75A3.75 3.75 0 0 0 23.75 0zM25 15a1.25 1.25 0 0 1-1.25 1.25H13.125L10 20.412 6.875 16.25H3.75A1.25 1.25 0 0 1 2.5 15V3.75A1.25 1.25 0 0 1 3.75 2.5h20A1.25 1.25 0 0 1 25 3.75z" data-name="Path 161"></path>
+                                <path d="M6.25 7.5h6.25a1.25 1.25 0 0 0 0-2.5H6.25a1.25 1.25 0 0 0 0 2.5z" data-name="Path 162"></path>
+                                <path d="M20 10H6.25a1.25 1.25 0 1 0 0 2.5H20a1.25 1.25 0 0 0 0-2.5z" data-name="Path 163"></path>
+                            </g>
+                        </svg>
+                        <span>Talk</span>
+                    </a>
+                </li>
+
+                <li style="flex-basis: 100%;">
+                    <a href="https://restarters.net/device">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="27.5" height="20" viewBox="0 0 27.5 20">
+                            <g data-name="Vrstva 163">
+                                <path d="M21.25 0h-10a3.75 3.75 0 0 0-3.525 2.5H7.5A3.75 3.75 0 0 0 3.963 5a1.25 1.25 0 0 0-.213 0h-2.5a1.25 1.25 0 0 0 0 2.5h2.5a1.25 1.25 0 0 0 .213 0A3.75 3.75 0 0 0 7.5 10h.462a3.75 3.75 0 0 0 3.288 1.975h5.925v4.275a3.75 3.75 0 0 0 3.75 3.75h2.825a3.75 3.75 0 0 0 3.75-3.75v-10A6.25 6.25 0 0 0 21.25 0zm-15 6.25A1.25 1.25 0 0 1 7.5 5v2.5a1.25 1.25 0 0 1-1.25-1.25zm18.75 10a1.25 1.25 0 0 1-1.25 1.25h-2.825a1.25 1.25 0 0 1-1.25-1.25v-5.275a1.5 1.5 0 0 0-1.5-1.5H11.25A1.25 1.25 0 0 1 10 8.225V3.75a1.25 1.25 0 0 1 1.25-1.25h10A3.75 3.75 0 0 1 25 6.25z" data-name="Path 137"></path>
+                                <path d="M21.25 5H20a1.25 1.25 0 0 0 0 2.5h1.25a1.25 1.25 0 0 0 0-2.5z" data-name="Path 138"></path>
+                            </g>
+                        </svg>
+                        <span>FIXOMETER</span>
+                    </a>
+                </li>
+
+                <li style="flex-basis: 100%;">
+                    <a href="https://restarters.net/party">
+                        <!--?xml version="1.0" encoding="UTF-8" standalone="no"?-->
+
+                        <svg width="100%" height="100%" viewBox="0 0 28 25" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;">
+              <g id="Path_72" transform="matrix(1,0,0,1,-1,-2)">
+                <path d="M24.75,4.5L23.5,4.5L23.5,3.25C23.5,2.564 22.936,2 22.25,2C21.564,2 21,2.564 21,3.25L21,4.5L8.5,4.5L8.5,3.25C8.5,2.564 7.936,2 7.25,2C6.564,2 6,2.564 6,3.25L6,4.5L4.75,4.5C2.693,4.5 1,6.193 1,8.25L1,23.25C1,25.307 2.693,27 4.75,27L24.75,27C26.807,27 28.5,25.307 28.5,23.25L28.5,8.25C28.5,6.193 26.807,4.5 24.75,4.5ZM3.5,8.25C3.5,7.564 4.064,7 4.75,7L24.75,7C25.436,7 26,7.564 26,8.25L26,9.5L3.5,9.5L3.5,8.25ZM26,23.25C26,23.936 25.436,24.5 24.75,24.5L4.75,24.5C4.064,24.5 3.5,23.936 3.5,23.25L3.5,12L26,12L26,23.25Z" style="fill:rgb(14,19,23);"></path>
+              </g>
+                            <g transform="matrix(1,0,0,1,-3.21859,1.0671)">
+                <path d="M16.969,11.433L18.149,13.546L20.427,14.072L18.878,15.903L19.106,18.341L16.969,17.36L14.831,18.341L15.059,15.903L13.51,14.072L15.789,13.546L16.969,11.433Z" style="fill:none;stroke:black;stroke-width:1px;"></path>
+              </g>
+            </svg>
+                        <span>EVENTS</span>
+                    </a>
+                </li>
+
+                <li style="flex-basis: 100%;">
+                    <a href="https://restarters.net/group">
+                        <svg xmlns="http://www.w3.org/2000/svg" id="group_ico" width="30" height="30" viewBox="0 0 30 30">
+                            <defs>
+                                <style>
+                                    .cls-1{fill:none}
+                                </style>
+                            </defs>
+                            <g id="Group_2881" data-name="Group 2881" transform="translate(.875 2.125)">
+                                <path id="Path_2173" d="M7.95 1.7a3.9 3.9 0 0 0-3.875 3.875A3.3 3.3 0 0 0 4.95 7.95 7.188 7.188 0 0 0 .7 14.7v.75a1.125 1.125 0 0 0 2.25 0v-.75A5.282 5.282 0 0 1 8.2 9.45a3.9 3.9 0 0 0 3.875-3.875A4.034 4.034 0 0 0 7.95 1.7zM9.7 5.575a1.709 1.709 0 0 1-1.75 1.75 1.709 1.709 0 0 1-1.75-1.75 1.709 1.709 0 0 1 1.75-1.75 1.709 1.709 0 0 1 1.75 1.75z" data-name="Path 2173" transform="translate(-.7 -1.7)"></path>
+                                <path id="Path_2174" d="M21.275 7.95a3.946 3.946 0 0 0 .875-2.375 3.875 3.875 0 1 0-3.875 3.875 5.282 5.282 0 0 1 5.25 5.25v.75a1.125 1.125 0 1 0 2.25 0v-.75a7.836 7.836 0 0 0-4.5-6.75zM19.9 5.575a1.75 1.75 0 1 1-3.5 0 1.75 1.75 0 0 1 3.5 0z" data-name="Path 2174" transform="translate(2.725 -1.7)"></path>
+                                <path id="Path_2175" d="M17.85 15.875a5.668 5.668 0 0 0 1.75-4.125 5.75 5.75 0 0 0-11.5 0 5.668 5.668 0 0 0 1.75 4.125A9.116 9.116 0 0 0 4.6 24.25v.875a1.253 1.253 0 0 0 1.25 1.25 1.344 1.344 0 0 0 1.25-1.25v-.875a6.75 6.75 0 0 1 13.5 0v.875a1.253 1.253 0 0 0 1.25 1.25 1.344 1.344 0 0 0 1.25-1.25v-.875a9.116 9.116 0 0 0-5.25-8.375zm-.875-4.125a3.227 3.227 0 0 1-3.25 3.25 3.123 3.123 0 0 1-3.125-3.25 3.309 3.309 0 0 1 3.25-3.25 3.2 3.2 0 0 1 3.125 3.25z" data-name="Path 2175" transform="translate(.275 -.625)"></path>
+                            </g>
+                        </svg>
+                        <span>GROUPS</span>
+                    </a>
+                </li>
+
+                <li style="flex-basis: 100%;" class="wiki-nav-item active">
+                    <a href="https://wiki.restarters.net" rel="noopener noreferrer">
+                        <svg xmlns="http://www.w3.org/2000/svg" id="wiki_ico" width="30" height="30" viewBox="0 0 30 30">
+                            <defs>
+                                <style>
+                                    .cls-1,.cls-2{fill:none}.cls-2{stroke:#000;stroke-linecap:round;stroke-width:2px}
+                                </style>
+                            </defs>
+                            <g id="Group_2744" data-name="Group 2744" transform="translate(5 3)">
+                                <path id="Path_1920" d="M22.222 7.422H7.543a2.064 2.064 0 0 1 0-4.128h14.679a1.149 1.149 0 0 0 1.147-1.147A1.083 1.083 0 0 0 22.222 1H7.543A4.309 4.309 0 0 0 3.3 5.243v16.514A4.309 4.309 0 0 0 7.543 26h14.679a1.149 1.149 0 0 0 1.147-1.147V8.454a1.219 1.219 0 0 0-1.147-1.032zM21.075 9.6v14.336H7.543a2.056 2.056 0 0 1-2.064-2.064V9.028a3.96 3.96 0 0 0 2.064.572z" data-name="Path 1920" transform="translate(-3.3 -1)"></path>
+                            </g>
+                            <path id="Line_45" d="M0 0h14" class="cls-2" data-name="Line 45" transform="translate(9.5 7.5)"></path>
+                        </svg>
+                        <span>Wiki</span>
+                    </a>
+                </li>
+
+                <li style="flex-basis: 100%;">
+                    <a href="https://restarters.net/workbench">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="30.016"
+                             height="30" viewBox="0 0 30.016 30">
+                            <defs>
+                                <clipPath id="a">
+                                    <rect width="30.016" height="30" fill="none"></rect>
+                                </clipPath>
+                            </defs>
+                            <g clip-path="url(#a)">
+                                <path d="M12.594,2.3,15.46,4.144a1.25,1.25,0,0,0,1.353-2.1L13.947.2a1.25,1.25,0,1,0-1.353,2.1"
+                                      transform="translate(4.38 0)"></path>
+                                <path d="M28.767,26.691H25.533C28.338,22.5,29.1,18.913,27.792,16c-1.77-3.927-6.811-5.329-9.562-5.808l1.924-3.16a1.25,1.25,0,0,0-.393-1.7l-4.49-2.886a1.262,1.262,0,0,0-1.745.405L6.254,14.8a1.252,1.252,0,0,0,.393,1.7l1.206.771L6.77,19a1.249,1.249,0,1,0,2.119,1.325l1.072-1.71,1.182.76a1.25,1.25,0,0,0,1.746-.4l3.939-6.47c1.789.221,7.192,1.157,8.7,4.52,1.055,2.354.025,5.6-3.056,9.654H1.25a1.25,1.25,0,0,0,0,2.5H28.767a1.244,1.244,0,1,0,0-2.487M11.413,16.584,9.029,15.053,15,5.241l2.382,1.531Z"
+                                      transform="translate(0 0.821)"></path>
+                                <path d="M3.109,19.814h7.822a1.25,1.25,0,0,0,0-2.5H3.109a1.25,1.25,0,0,0,0,2.5"
+                                      transform="translate(0.677 6.309)"></path>
+                            </g>
+                        </svg>
+                        <span>WORKBENCH</span>
+                    </a>
+                </li>
+            </ul>
+        </component>
+
+        <component type="RestartersUserMenu"> </component>
+    </component>
+    <!-- Navigation -->
+
+    <!-- Container -->
+    <component type="Container" class="container">
+        <row class="mb-25">
+            <component type="Container" class="col-12 col-md-12">
+                <component type="Container" class="d-flex flex-row justify-content-between align-items-center">
+                    <component type="HtmlElement" element="a" href="/" class="d-flex align-items-center">
+                        <component type="HtmlElement" element="h1" class="firstHeading mr-30" text="Wiki"/>
+                        <component type="Html">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="d-none d-md-block" width="133.359" height="78.218" viewBox="0 0 133.359 78.218">
+                                <defs>
+                                    <style>
+                                        .cls-1{fill:none;stroke:#000;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-width:2px}
+                                    </style>
+                                </defs>
+                                <g id="wiki_doodle" transform="translate(1 .993)">
+                                    <path id="Path_2043" d="M14.105 11.8c-.96.384-2.352.576-4.369 1.392a27.7 27.7 0 0 1-4.753 1.776l5.569 11.138a6.84 6.84 0 0 1-.816 2.785 17.509 17.509 0 0 0-.816 4.369C7.768 37.2 6.952 41.182 5.8 45.119c-.816 4.369-1.584 8.738-1.968 13.107a28.194 28.194 0 0 1-.816 5.953c0 .816-.384 2.4 0 2.785.816 1.584 3.985 1.2 5.185 1.2 1.968 0 3.985.816 5.953.384.816 0 11.906.816 12.723.384a44.675 44.675 0 0 0 7.153-.384 31.022 31.022 0 0 0 5.953-.384c1.584 0 2.4-.816 3.553-1.2 0-.384.384.384 0 0" class="cls-1" data-name="Path 2043" transform="translate(-2.199 -6.856)"></path>
+                                    <path id="Path_2044" d="M26.3 11.384c5.185 0 9.938.384 15.075.384 1.968 0 4.369-.384 6.337-.384C49.3 11.384 50.5 11 51.7 11" class="cls-1" data-name="Path 2044" transform="translate(-14.394 -6.441)"></path>
+                                    <path id="Path_2045" d="M80.1 10.9a38.027 38.027 0 0 0 .816 9.554c.816 5.185 1.968 10.706 3.169 15.891A79.312 79.312 0 0 1 84.9 45.9c0 3.553.384 6.769.384 10.322a35.12 35.12 0 0 1-.384 6.337c-.384 1.2-.384 2.4-.816 3.553" class="cls-1" data-name="Path 2045" transform="translate(-42.364 -6.389)"></path>
+                                    <path id="Path_2046" d="M80.9 21.2c.816 0 1.2-.384 1.968-.816 1.2 0 1.968-.384 3.169-.384a42.648 42.648 0 0 1 6.769.384 5.436 5.436 0 0 1 3.169 3.985 32.152 32.152 0 0 1 .816 6.337c.384 5.569-2.785 10.706-4.753 15.891a44.76 44.76 0 0 1-3.169 5.953 24.9 24.9 0 0 1-2.785 4.417" class="cls-1" data-name="Path 2046" transform="translate(-42.78 -11.12)"></path>
+                                    <path id="Path_2047" d="M82.1 31.44A29.282 29.282 0 0 1 88.293 30c1.2.384 2.4 0 3.553.816.816.384 1.584 2.4 1.584 3.553.384 3.985-1.584 7.538-3.169 11.138a21.91 21.91 0 0 1-1.968 4.369 20.421 20.421 0 0 1-2.449 4.081" class="cls-1" data-name="Path 2047" transform="translate(-43.404 -16.319)"></path>
+                                    <path id="Path_2048" d="M26.3 6.447c1.2-1.2 2.785-3.169 4.369-3.553a16.879 16.879 0 0 1 8.738-1.248 33.944 33.944 0 0 1 7.2.912c3.5.816 5.905 2.641 5.521 3.457" class="cls-1" data-name="Path 2048" transform="translate(-14.394 -1.503)"></path>
+                                    <path id="Path_2049" d="M2.316 126.7c-.384 1.2-.384 3.985-.816 5.185v1.2a14.554 14.554 0 0 1 4.369 1.2c2.4.384 4.753 0 7.153.384a61.421 61.421 0 0 0 8.738.816c3.985 0 7.922.384 11.906 0a24.972 24.972 0 0 0 7.538-.816c1.2 0 2.785 0 3.553-1.2.384-1.2 0-1.968-.384-3.169a14.432 14.432 0 0 0-1.584-3.553" class="cls-1" data-name="Path 2049" transform="translate(-1.5 -66.593)"></path>
+                                    <path id="Path_2050" d="M91.7 119.462c2.785-3.553 7.922-4.753 11.906-4.753a15.867 15.867 0 0 1 6.337 1.2c2.785.384 5.185.816 7.922 1.2a36.892 36.892 0 0 0 13.107-1.2 12.354 12.354 0 0 0 5.569-4.369c1.2-1.968 1.2-4.753-.816-5.569-1.584-1.2-3.169 0-3.985 1.584-.816 2.785 0 5.185.816 7.922 1.2 3.553.384 7.538-.816 10.706-.384 1.2-3.169 7.153-5.185 5.185-1.968-1.968.384-5.185 1.968-6.337 2.785-1.968 7.538-1.968 11.138-1.968a51.805 51.805 0 0 0 17.092-2.785c2.4-.816 4.369-2.785 6.337-4.369 1.584-1.2 3.169-3.169 5.569-3.985" class="cls-1" data-name="Path 2050" transform="translate(-48.395 -55.563)"></path>
+                                    <path id="Path_2051" d="M254.37 96.1a19.664 19.664 0 0 0-3.169 4.849c-.816.816-1.968 3.121-1.584 4.273.384 1.2 2.4 2.4 3.553 2.785a2.518 2.518 0 0 0 2.785-.384 20.836 20.836 0 0 0 4.369-5.569c.816-1.2 1.584-1.584.816-2.4-1.2-1.2-3.553-1.968-5.185-2.785a7.356 7.356 0 0 0-1.584-.768" class="cls-1" data-name="Path 2051" transform="translate(-130.457 -50.684)"></path>
+                                    <path id="Line_26" d="M2.545 0L0 3.121" class="cls-1" data-name="Line 26" transform="translate(125.498 42.487)"></path>
+                                    <path id="Line_27" d="M2.593 0L0 3.841" class="cls-1" data-name="Line 27" transform="translate(128.379 43.688)"></path>
+                                    <path id="Path_2052" d="M92.5 108.5v.384a44.676 44.676 0 0 0 7.153.384c-.816 0-1.584-.384-2.4-.384h-1.968c-.384.048-2.4-.384-2.785-.384" class="cls-1" data-name="Path 2052" transform="translate(-48.811 -57.131)"></path>
+                                </g>
+                            </svg>
+                        </component>
+                    </component>
+                    <component type="HtmlElement" element="div" class="d-flex">
+                        <component type="CustomSearchBar" class="ml-auto"/>
+                        <component type="HtmlElement" id="helpbutton" element="a" href="/help" text="Wiki Help" class="d-flex ml-2 align-items-center btn btn-primary" style="background: none; color: black;" />
+                    </component>
+                </component>
+            </component>
+        </row>
+
+        <row>
+            <component type="Container" class="container">
+                <component type="SiteNotice" />
+            </component>
+        </row>
+
+        <row>
+            <component type="Container" class="col-12 col-md-12 p-0 p-sm-15">
+                <component type="Container" class="offset-md-box-shadow no-space-mobile">
+
+                    <!-- Tab Controls -->
+                    <component type="RestartersPageTools" />
+
+                    <!-- Tab Controls -->
+
+                    <!-- Tab Content -->
+                    <component type="Container" class="tab-content" id="content" role="tablist">
+                        <component type="CustomTab" id="main-pane" class="tab-pane fade show active" role="tabpanel" aria-labelledby="tab-A">
+                            <component type="Container" class="tab-pane-content">
+                                <component type="MainTitle" class="main-title text-left" />
+
+                                <component type="CustomMainContent"/>
+
+                                <component type="CustomToolbox" class="footer-links footer-links-border-top list-unstyled list-xl-inline mb-0 md-lg-0"/>
+                            </component>
+                        </component>
+
+                        <component type="CustomTab" id="recent-changes-pane" class="tab-pane fade" role="tabpanel" aria-labelledby="tab-B">
+                            <component type="Container" class="tab-pane-content">
+                                <!-- TODO -->
+                            </component>
+                        </component>
+
+                        <component type="CustomTab" id="help-pane" class="tab-pane fade" role="tabpanel" aria-labelledby="tab-C">
+                            <component type="Container" class="tab-pane-content">
+                                <!-- TODO -->
+                            </component>
+                        </component>
+
+                        <component type="CustomTab" id="actions-pane" class="tab-pane fade" role="tabpanel" aria-labelledby="tab-D">
+                            <component type="Container" class="tab-pane-content">
+                                <!-- TODO -->
+                                <component type="PageTools" class="flex-row" position="right" hideSelectedNameSpace="yes"/>
+                                <component type="PersonalTools" position="right"/>
+
+                            </component>
+                        </component>
+                    </component>
+                    <!-- Tab Content -->
+
+                </component>
+            </component>
+        </row>
+
+        <!-- Footer section -->
+        <row class="mt-30">
+            <component type="Container" class="col-12 col-md-12">
+                <component type="Container" class="d-flex flex-column flex-lg-row justify-content-lg-between">
+                    <component type="FooterPlaces" class="footer-links list-unstyled list-lg-inline mb-25 md-lg-0"/>
+
+                    <!-- This page was last edited on 3 September 2019, at 21:03. -->
+                    <component type="FooterInfo" class="footer-description text-left text-lg-right"/>
+                </component>
+            </component>
+        </row>
+        <!-- Footer section -->
+
+    </component>
+    <!-- Container -->
+
+</structure>
+
