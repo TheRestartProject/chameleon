@@ -73,7 +73,7 @@ class RestartersSearchBar extends Component
             $this->indent(1)."<form $attribsSearchForm >".
             $this->indent(1)."<input type=\"hidden\" name=\"title\" value=\" {$this->getSkinTemplate()->data[ 'searchtitle' ]}\" />".
             $this->indent().'<div class="input-group">'.
-            $this->indent(1).$this->getSkinTemplate()->makeSearchInput(['id' => IdRegistry::getRegistry()->getId('searchInput'), 'type' => 'text', 'class' => 'form-control']).
+            $this->indent(1).$this->getSkin()->makeSearchInput(['id' => IdRegistry::getRegistry()->getId('searchInput'), 'type' => 'text', 'class' => 'form-control']).
             $this->indent().'<div class="input-group-append">';
 
         $this->indent(1);
@@ -120,7 +120,7 @@ class RestartersSearchBar extends Component
                 'name' => $nameAttr,
                 'type' => 'submit',
                 'class' => $glyphicon.'-btn '.$idAttr,
-                'aria-label' => $this->getSkinTemplate()->getMsg('chameleon-search-aria-label')->text(),
+                'aria-label' => $this->getSkin()->getMsg('chameleon-search-aria-label')->text(),
             ];
 
             $buttonAttrs = array_merge(
