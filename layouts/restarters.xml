@@ -190,7 +190,7 @@ with this program. If not, see <http://www.gnu.org/licenses/>.
                         </component>
                     </component>
                     <component type="HtmlElement" element="div" class="d-flex">
-                        <component type="CustomSearchBar" class="ml-auto"/>
+                        <component type="RestartersSearchBar" class="ml-auto"/>
                         <component type="HtmlElement" id="helpbutton" element="a" href="/help" text="Wiki Help" class="d-flex ml-2 align-items-center btn btn-primary" style="background: none; color: black;" />
                     </component>
                 </component>
