@@ -216,7 +216,7 @@ with this program. If not, see <http://www.gnu.org/licenses/>.
                     <component type="Container" class="tab-content" id="content" role="tablist">
                         <component type="RestartersTab" id="main-pane" class="tab-pane fade show active" role="tabpanel" aria-labelledby="tab-A">
                             <component type="Container" class="tab-pane-content">
-                                <component type="RestartersTitle" class="main-title text-left" />
+                                <component type="RestartersMainTitle" class="main-title text-left" />
 
                                 <component type="RestartersMainContent"/>
 
