@@ -214,29 +214,29 @@ with this program. If not, see <http://www.gnu.org/licenses/>.
 
                     <!-- Tab Content -->
                     <component type="Container" class="tab-content" id="content" role="tablist">
-                        <component type="CustomTab" id="main-pane" class="tab-pane fade show active" role="tabpanel" aria-labelledby="tab-A">
+                        <component type="RestartersTab" id="main-pane" class="tab-pane fade show active" role="tabpanel" aria-labelledby="tab-A">
                             <component type="Container" class="tab-pane-content">
                                 <component type="MainTitle" class="main-title text-left" />
 
                                 <component type="CustomMainContent"/>
 
-                                <component type="CustomToolbox" class="footer-links footer-links-border-top list-unstyled list-xl-inline mb-0 md-lg-0"/>
+                                <component type="RestartersToolbox" class="footer-links footer-links-border-top list-unstyled list-xl-inline mb-0 md-lg-0"/>
                             </component>
                         </component>
 
-                        <component type="CustomTab" id="recent-changes-pane" class="tab-pane fade" role="tabpanel" aria-labelledby="tab-B">
+                        <component type="RestartersTab" id="recent-changes-pane" class="tab-pane fade" role="tabpanel" aria-labelledby="tab-B">
                             <component type="Container" class="tab-pane-content">
                                 <!-- TODO -->
                             </component>
                         </component>
 
-                        <component type="CustomTab" id="help-pane" class="tab-pane fade" role="tabpanel" aria-labelledby="tab-C">
+                        <component type="RestartersTab" id="help-pane" class="tab-pane fade" role="tabpanel" aria-labelledby="tab-C">
                             <component type="Container" class="tab-pane-content">
                                 <!-- TODO -->
                             </component>
                         </component>
 
-                        <component type="CustomTab" id="actions-pane" class="tab-pane fade" role="tabpanel" aria-labelledby="tab-D">
+                        <component type="RestartersTab" id="actions-pane" class="tab-pane fade" role="tabpanel" aria-labelledby="tab-D">
                             <component type="Container" class="tab-pane-content">
                                 <!-- TODO -->
                                 <component type="PageTools" class="flex-row" position="right" hideSelectedNameSpace="yes"/>
