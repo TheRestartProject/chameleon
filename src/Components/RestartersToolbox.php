@@ -70,7 +70,7 @@ class RestartersToolbox extends Component
 
         $listItems = [];
         // FIXME: Do we need to care of dropdown menus here? E.g. RSS feeds?
-        foreach ($skinTemplate->getToolbox() as $key => $linkItem) {
+        foreach ( $skinTemplate->get('sidebar')['TOOLBOX'] as $key => $linkItem) {
             $listItems[] = $this->indent().$skinTemplate->makeListItem($key, $linkItem, ['tag' => 'div']);
         }
 

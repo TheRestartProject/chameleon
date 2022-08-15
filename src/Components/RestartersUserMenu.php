@@ -49,7 +49,7 @@ class RestartersUserMenu extends Component {
 
 		$ret = $this->indent() . '<!-- user menu -->';
 
-        if ($user->isLoggedIn()) {
+        if ($user->isRegistered()) {
             $ret .= '<ul class="nav-right">
         <li style="width:99px;text-align:right">';
 
