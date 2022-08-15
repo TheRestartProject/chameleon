@@ -202,7 +202,7 @@ class RestartersMainContent extends Component
                 $this->indent().
                 $idRegistry->element(
                     'div',
-                    ['id' => \Sanitizer::escapeId("mw-indicator-$id"), 'class' => 'mw-indicator'],
+                    ['id' => \Sanitizer::escapeIdForAttribute("mw-indicator-$id"), 'class' => 'mw-indicator'],
                     $content
                 );
         }

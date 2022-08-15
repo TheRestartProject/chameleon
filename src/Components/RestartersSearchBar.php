@@ -121,7 +121,7 @@ class RestartersSearchBar extends Component
                 'name' => $nameAttr,
                 'type' => 'submit',
                 'class' => $glyphicon.'-btn '.$idAttr,
-                'aria-label' => $this->getSkin()->getMsg('chameleon-search-aria-label')->text(),
+                'aria-label' => $this->getSkinTemplate()->getMsg( 'chameleon-search-aria-label' )->text()
             ];
 
             $buttonAttrs = array_merge(
