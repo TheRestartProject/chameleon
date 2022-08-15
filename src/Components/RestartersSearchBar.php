@@ -58,12 +58,13 @@ class RestartersSearchBar extends Component
         );
 
         $tooltipSearchFormWrapper = Linker::tooltip('p-search');
+        $data = $this->getSkinTemplate()->data;
 
         $attribsSearchForm = \Html::expandAttributes(
             [
                 'id' => IdRegistry::getRegistry()->getId('searchform'),
                 'class' => 'mw-search',
-                'action' => $this->getSkinTemplate()->data[ 'wgScript' ],
+                'action' => array_key_exists('wgScript', $data) ? $data['wgScript'] : '',
             ]
         );
 
@@ -71,7 +72,7 @@ class RestartersSearchBar extends Component
 
             $this->indent()."<div $attribsSearchFormWrapper $tooltipSearchFormWrapper >".
             $this->indent(1)."<form $attribsSearchForm >".
-            $this->indent(1)."<input type=\"hidden\" name=\"title\" value=\" {$this->getSkinTemplate()->data[ 'searchtitle' ]}\" />".
+            $this->indent(1)."<input type=\"hidden\" name=\"title\" value=\"" . (array_key_exists('searchtitle', $data) ? $data['searchtitle'] : '') . "\" />".
             $this->indent().'<div class="input-group">'.
             $this->indent(1).$this->getSkin()->makeSearchInput(['id' => IdRegistry::getRegistry()->getId('searchInput'), 'type' => 'text', 'class' => 'form-control']).
             $this->indent().'<div class="input-group-append">';
