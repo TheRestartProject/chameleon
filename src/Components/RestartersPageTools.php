@@ -91,7 +91,7 @@ class RestartersPageTools extends Component
                         'aria-expanded' => "false",
                         'data-toggle' => "dropdown"
                     ],
-                    'Other'
+                    'More'
                 ),
                 IdRegistry::getRegistry()->element(
                     'div',
